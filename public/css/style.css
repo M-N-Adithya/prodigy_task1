@@ -1,0 +1,149 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand i {
+  margin-right: 10px;
+}
+
+.navbar .navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-links a {
+  color: green; /* Changed to white for better visibility */
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-links a i {
+  margin-right: 5px;
+}
+
+.navbar .navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 70px; /* Adjusted margin to accommodate fixed navbar */
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #1d976c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+button:hover {
+  background: #1a754f;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #1d976c;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+a i {
+  margin-right: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus, button:focus, input:focus {
+  outline: 3px solid #1d976c;
+  outline-offset: 2px;
+}

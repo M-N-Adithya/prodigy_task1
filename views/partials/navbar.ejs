@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <div class="container">
+    <a href="/" class="navbar-brand"><i class="fas fa-treasure-chest"></i> Treasure Hunt</a>
+    <div class="navbar-links">
+      <% if (!user) { %>
+        <a href="/auth/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="/auth/register"><i class="fas fa-user-plus"></i> Register</a>
+      <% } else { %>
+        <a href="/dashboard"><i class="fas fa-user"></i> Dashboard</a>
+        <% if (user.role === 'admin') { %>
+          <a href="/admin"><i class="fas fa-user-shield"></i> Admin</a>
+        <% } %>
+        <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      <% } %>
+    </div>
+  </div>
+</nav>
